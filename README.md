@@ -10,7 +10,7 @@
   네트워크를 구축하고 실시간 트래픽을 처리하는 핵심 게임플레이
 </p>
 
-[원본 프로젝트 저장소](https://github.com/parkwonkuku/2026_GraduationProject) · [아키텍처](docs/architecture.md) · [문제 해결 사례](docs/case-studies.md)
+[아키텍처](docs/architecture.md) · [문제 해결 사례](docs/case-studies.md)
 
 ## 프로젝트 개요
 
@@ -18,9 +18,16 @@
 
 - **엔진:** Unity 6000.3.6f1, URP 17.3
 - **언어:** C#
-- **플랫폼:** Windows Standalone
+- **플랫폼:** Windows / Steam
 - **협업:** 4명의 커밋 기여자, 총 552개 커밋, PR 기반 개발
 - **본인 기여:** 284개 커밋 — 시뮬레이션 코어 및 게임 시스템 중심
+
+## 출시 정보
+
+- **출시 플랫폼:** Steam (Windows)
+- **상태:** 출시 준비 중
+
+상용 출시를 준비 중인 프로젝트이므로 실행 파일과 전체 소스 코드는 공개하지 않습니다. 이 저장소는 담당 영역, 기술적 의사결정, 문제 해결 과정과 플레이 화면을 소개하는 채용 포트폴리오입니다.
 
 ## 핵심 게임플레이
 
