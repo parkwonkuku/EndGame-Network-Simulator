@@ -2,6 +2,14 @@
 
 > 제한된 예산으로 네트워크 인프라를 설계하고 증가하는 트래픽을 처리하는 Unity 기반 전략 시뮬레이션 게임입니다.
 
+<p align="center">
+  <img src="docs/images/gameplay.gif" alt="EndGame 네트워크 구축 게임플레이" width="800">
+</p>
+
+<p align="center">
+  네트워크를 구축하고 실시간 트래픽을 처리하는 핵심 게임플레이
+</p>
+
 [원본 프로젝트 저장소](https://github.com/parkwonkuku/2026_GraduationProject) · [아키텍처](docs/architecture.md) · [문제 해결 사례](docs/case-studies.md)
 
 ## 프로젝트 개요
@@ -20,6 +28,39 @@
 2. 트래픽 혼잡과 패킷 유실을 관찰하며 인프라를 확장하거나 업그레이드합니다.
 3. DDoS, 트래픽 버스트, 링크 장애에 대응합니다.
 4. 목표 전송량을 달성하면 승리하고 처리율·지출·시간을 바탕으로 점수를 기록합니다.
+
+## 게임 화면
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/images/stage-selection.png" alt="스테이지 선택 화면">
+      <br>
+      <b>스테이지와 난이도 선택</b><br>
+      <sub>목표를 선택하고 난이도별 네트워크 구축에 도전합니다.</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/images/ranking.png" alt="스테이지 랭킹 화면">
+      <br>
+      <b>스테이지 랭킹</b><br>
+      <sub>플레이 결과와 리더보드 내 순위를 확인합니다.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/images/network-building.png" alt="네트워크 구축 화면">
+      <br>
+      <b>네트워크 구축</b><br>
+      <sub>노드와 케이블을 배치해 트래픽 전달 경로를 설계합니다.</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/images/network-status.png" alt="실시간 네트워크 상태 화면">
+      <br>
+      <b>실시간 상태 확인</b><br>
+      <sub>처리량과 지연 시간을 확인하고 혼잡 구간을 개선합니다.</sub>
+    </td>
+  </tr>
+</table>
 
 ## 주요 시스템
 
