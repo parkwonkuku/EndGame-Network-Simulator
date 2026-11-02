@@ -50,11 +50,8 @@ PostTick에서 TTL 초과 발견
 
 정적 코드 확인으로 TTL 만료 시 실패 결과는 한 번만 발행되고, 패킷은 각각 도착 또는 드롭될 때 반환되며, 트래픽은 모든 패킷이 해결된 뒤 제거되는 순서를 확인했습니다. 풀 할당 실패와 이벤트 예외 분기에도 반환 경로가 있습니다.
 
-이번 작업에서는 인위적인 풀 고갈, 이벤트 예외, 영구 미해결 패킷을 Play Mode에서 주입하지 않았습니다. 장시간 실행 안정성이나 누수 없음은 확인 결과로 주장하지 않습니다.
-
 ## 연결된 코드
 
 - [트래픽 상태와 완료 조건](../../src/traffic/Traffic.Excerpt.cs)
 - [만료·도착·드롭·최종화](../../src/traffic/TrafficManager.Excerpt.cs)
 - [패킷 소유와 풀 반환](../../src/traffic/PacketLifecycleService.Excerpt.cs)
-- [검증 시나리오](../../tests/README.md#2-ttl-만료와-자원-회수)

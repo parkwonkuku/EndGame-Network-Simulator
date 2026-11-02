@@ -1,0 +1,16 @@
+검증 일시: 2026-11-02 (Asia/Seoul)
+대상: Unity 6000.3.6f1이 생성한 Assembly-CSharp.csproj
+
+실행 명령:
+dotnet restore Assembly-CSharp.csproj
+dotnet build Assembly-CSharp.csproj --no-restore
+
+결과:
+- Assembly-CSharp-firstpass.dll 생성
+- Assembly-CSharp.dll 생성
+- 경고 0개
+- 오류 0개
+- 종료 코드 0
+
+검증 범위:
+이 결과는 생성된 C# 프로젝트의 스크립트 참조와 컴파일만 확인한다.

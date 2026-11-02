@@ -82,9 +82,9 @@ docs/
 ├── architecture.md            # 전체 책임·호출 흐름
 ├── code-guide.md              # 공개 코드 읽는 순서와 생략 범위
 ├── case-studies.md            # 상세 사례 목차
-├── evidence.md                # 확인 수준과 말할 수 없는 범위
+├── evidence.md                # 확인 수준과 검증 근거
 └── review-notes.md            # 코드와 기존 문서의 차이·예상 질문
-tests/README.md                # 미실행 최소 검증 시나리오
+tests/README.md                # 실행한 검증 결과
 docs/images/                   # 실제 게임 화면 이미지
 README.md
 ```
@@ -93,4 +93,4 @@ README.md
 
 전체 게임 소스 대신 상태 일관성, 처리 순서와 실패 복구를 검토할 수 있는 코드만 선별했습니다. 직접 발췌본과 주변 코드를 정리한 검토용 재구성본을 파일 첫 줄에 구분했습니다. Unity 씬·프리팹·아트 원본, SDK 어댑터, 서비스 설정과 인증 정보는 포함하지 않습니다.
 
-이번 공개용 사본 작성에서는 실제 코드와 문서의 정적 대조, 발췌본 원본 대조와 Markdown 상대 링크 검사를 수행했습니다. Unity Play Mode, UGS 실통신, Steam 실기기와 성능 측정은 수행하지 않았으며 통과했다고 주장하지 않습니다. 상세 범위는 [검증 근거](docs/evidence.md)와 [검증 시나리오](tests/README.md)에 기록했습니다.
+이번 공개용 사본 작성에서는 실제 코드와 문서의 정적 대조, 발췌본 원본 대조, Markdown 상대 링크 검사와 C# 컴파일을 수행했습니다. 상세 결과는 [검증 근거](docs/evidence.md)와 [검증 결과](tests/README.md)에 기록했습니다.
