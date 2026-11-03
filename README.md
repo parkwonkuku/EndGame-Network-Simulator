@@ -4,7 +4,7 @@
 
 제한된 예산으로 네트워크를 구축하고 트래픽 병목과 장애에 대응하는 Unity 기반 전략 시뮬레이션 게임입니다.
 
-[Steam 무료 데모](https://store.steampowered.com/app/5152640/Traceroute_Demo/) · [코드 읽는 순서](docs/code-guide.md) · [문제 해결 과정](docs/case-studies.md) · [아키텍처](docs/architecture.md)
+[포트폴리오 PDF 보기](docs/portfolio.pdf) · [Steam 무료 데모](https://store.steampowered.com/app/5152640/Traceroute_Demo/) · [코드 읽는 순서](docs/code-guide.md) · [문제 해결 과정](docs/case-studies.md) · [아키텍처](docs/architecture.md)
 
 ![실제 네트워크 구축 화면](https://raw.githubusercontent.com/parkwonkuku/EndGame-Network-Simulator/main/docs/images/network-building.png)
 
