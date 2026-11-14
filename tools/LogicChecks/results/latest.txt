@@ -1,0 +1,27 @@
+Production-source logic validation
+SDK: 11.0.100
+Configuration: Release; no external package sources
+Commands: dotnet restore --configfile NuGet.Config; dotnet run -c Release --no-restore -p:UseSharedCompilation=false
+D:\2026_GraduationProject\Graduation_project\Assets\Project\Scripts\Managers\SaveManager.cs(12,35): warning CS0649: 'SaveManager.useCloudSave' 필드에는 할당되지 않으므로 항상 false 기본값을 사용합니다. [D:\2026_GraduationProject\Graduation_project\tools\LogicChecks\LogicChecks.csproj]
+D:\2026_GraduationProject\Graduation_project\Assets\Project\Scripts\Core\Managers\TrafficManager.cs(14,40): warning CS0649: 'TrafficManager.trafficFailedSfx' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다. [D:\2026_GraduationProject\Graduation_project\tools\LogicChecks\LogicChecks.csproj]
+D:\2026_GraduationProject\Graduation_project\Assets\Project\Scripts\Core\Managers\TrafficManager.cs(13,40): warning CS0649: 'TrafficManager.trafficDeliveredSfx' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다. [D:\2026_GraduationProject\Graduation_project\tools\LogicChecks\LogicChecks.csproj]
+D:\2026_GraduationProject\Graduation_project\Assets\Project\Scripts\Core\Managers\TrafficPoolManager.cs(32,35): warning CS0414: 'TrafficPoolManager.enableTracing' 필드가 할당되었지만 사용되지 않았습니다. [D:\2026_GraduationProject\Graduation_project\tools\LogicChecks\LogicChecks.csproj]
+Runtime: .NET 11.0.0
+Production-source logic checks; Unity/scene/cloud boundaries substituted.
+PASS TTL boundary retains packet ownership and reports failure once
+PASS All arrivals report success only after last packet
+PASS Mixed arrival and drop produces one failed traffic
+PASS Duplicate arrival and drop do not double-release
+PASS Throwing event subscriber does not block cleanup or other subscribers
+PASS Zero TTL does not expire
+PASS Invalid request allocates no objects
+PASS Local save precedes cloud acknowledgement
+PASS Old upload success cannot clear newer pending save
+PASS Old upload failure cannot re-mark completed newer save
+PASS Latest upload failure retains local data for retry
+PASS Cloud read failure preserves local progress
+PASS Persisted pending save is retried on cloud enable
+PASS Retry acknowledgement must not clear a newer pending save
+PASS Old retry failure must not re-mark a completed newer save
+RESULT: 15 passed, 0 failed, 44 assertions evaluated
+Exit code: 0

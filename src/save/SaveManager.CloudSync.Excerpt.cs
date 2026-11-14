@@ -126,17 +126,24 @@ public sealed class SaveManagerCloudSyncExcerpt
             return;
         }
 
+        int version = localSaveVersion;
         try
         {
             await cloudStorage.SaveAsync(SaveKey, BuildCloudUploadJson());
-            Data.hasPendingCloudSave = false;
-            SaveLocalWithoutVersionChange();
-            NotifyDataLoaded();
+            if (version == localSaveVersion)
+            {
+                Data.hasPendingCloudSave = false;
+                SaveLocalWithoutVersionChange();
+                NotifyDataLoaded();
+            }
         }
         catch (Exception ex)
         {
-            Data.hasPendingCloudSave = true;
-            SaveLocalWithoutVersionChange();
+            if (version == localSaveVersion)
+            {
+                Data.hasPendingCloudSave = true;
+                SaveLocalWithoutVersionChange();
+            }
             Debug.LogWarning($"[SaveManager] Pending local save could not sync. Local save will be retried later. {ex.Message}");
         }
         finally

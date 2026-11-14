@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/Project/Scripts/Core/Managers/TrafficManager.cs" Link="Production/TrafficManager.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Core/Managers/PacketLifecycleService.cs" Link="Production/PacketLifecycleService.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Core/Managers/TrafficPoolManager.cs" Link="Production/TrafficPoolManager.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Core/Managers/ObjectPool.cs" Link="Production/ObjectPool.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Core/Managers/NetworkDropMonitor.cs" Link="Production/NetworkDropMonitor.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Core/Managers/NetworkStatsManager.cs" Link="Production/NetworkStatsManager.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Core/NetworkGraph/Traffic.cs" Link="Production/Traffic.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Core/NetworkGraph/Packet.cs" Link="Production/Packet.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Helper/IDGenerator.cs" Link="Production/IDGenerator.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Interfaces/NetworkEventBus.cs" Link="Production/NetworkEventBus.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Interfaces/SimulationEventBus.cs" Link="Production/SimulationEventBus.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Managers/SaveManager.cs" Link="Production/SaveManager.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Managers/SaveStorage.cs" Link="Production/SaveStorage.cs" />
+    <Compile Include="../../Assets/Project/Scripts/Data/GameData.cs" Link="Production/GameData.cs" />
+  </ItemGroup>
+</Project>
